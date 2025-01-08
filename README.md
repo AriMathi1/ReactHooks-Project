@@ -1,4 +1,5 @@
 Overview
+
 This ReactJS application interacts with the Fake Store API to fetch and display a list of products. Users can browse products, add them to a shopping cart, and manage their cart items through a modal interface.
 
 Features
