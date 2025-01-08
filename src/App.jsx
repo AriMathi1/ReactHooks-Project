@@ -18,13 +18,13 @@ function App() {
     };
 
     let addToCart = (product) => {
-        setCart([...cart, product]);
-        setTotal(total + product.price);
-        let isAlreadyInCart = cart.some((item) => item.id === product.id);
+        let isAlreadyInCart = cart.find((item) => item.id === product.id);
         if (isAlreadyInCart) {
             alert("item is already in your cart!");
             return;
         }
+        setCart([...cart, product]);
+        setTotal(total + product.price);
     };
 
     let removeCart = (product, index) => {
